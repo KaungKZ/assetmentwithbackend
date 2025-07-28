@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+@import url("./animation.css");
+@import url("./total-processing.css");
+
+/* * {
+  font-family: 'SF Pro Display', sans-serif;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #272727;
+}
+
+/* transition effects */
+.after-left-to-right-underline {
+  @apply after:block after:border-b after:border-gray-800 after:transition-transform after:scale-x-0 after:transform after:duration-300 after:ease-in-out hover:after:scale-x-100 after:origin-left;
+}
+
+.my-underline {
+  @apply after:block after:border-b after:border-gray-800;
+}
+
+.wrapper {
+  @apply flex flex-col gap-4;
+}
+
+.list {
+  @apply ml-5 list-disc;
+}
+
+a {
+  @apply text-bermuda-200 hover:text-bermuda-300;
+}
+
+.transitioned-image {
+  @apply duration-300 ease-in hover:scale-105;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.youtube-player {
+  @apply absolute opacity-[40%] object-cover;
+}
+
+/* Home page banner */
+.banner-swiper .swiper-button-prev::after,
+.banner-swiper .swiper-button-next::after {
+  @apply relative text-base text-white;
+}
+
+.primary-checkbox {
+  @apply w-4 h-4 bg-gray-100 border-gray-300 rounded cursor-pointer text-bermuda-100 dark:focus:ring-bermuda-100 focus:ring-0 dark:bg-gray-700 dark:border-gray-600;
+}
+
+/* Swiper */
+.swiper-pagination-bullet {
+  @apply !bg-gray-300;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  @apply !text-sm;
+}
+
+.swiper-button-prev {
+  @apply !left-1;
+}
+
+.swiper-button-next {
+  @apply !right-1;
+}
+
+.sm-link {
+  @apply text-sm font-medium font-sfpro;
+}
+/* testi slider */
+.testi-swiper {
+  @apply !pb-[50px];
+}
+
+.testi-swiper .swiper-button-prev::after {
+  @apply relative -ml-2.5 text-base text-black;
+}
+
+.testi-swiper .swiper-button-next::after {
+  @apply relative -mr-2.5 text-base text-black;
+}
+
+.react-photo-album--photo {
+  @apply duration-300 hover:scale-105;
+}
+
+.grecaptcha-badge {
+  @apply invisible;
+}
+
+/* Calendar */
+.fc-toolbar-title {
+  @apply !text-lg;
+}
+
+.fc-today-button {
+  @apply !text-sm !uppercase;
+}
+
+.fc-button-group button {
+  @apply !py-1 !px-2;
+}
+
+.fc-button-group button span {
+  @apply !flex !justify-center !items-center;
+}
+
+.fc-button-group button span::before {
+  @apply !text-base;
+}
+
+.fc-header-toolbar {
+  @apply !mb-4;
+}
+
+.fc-col-header-cell-cushion {
+  @apply !text-[#2c3d4f];
+}
+
+.fc-daygrid-day-events {
+  @apply !hidden;
+}
+
+.fc-daygrid-day-number {
+  @apply !text-gray-500;
+}
+
+.fc-day-today {
+  @apply !bg-[#bbecf7];
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  @apply !border-gray-400;
+}
+
+.fc-view-harness {
+  @apply !border-t-gray-400 !border-l !border-t !border-l-gray-400;
+}
+
+/* Filepond */
+
+.filepond--credits {
+  @apply invisible;
+}
+
+.filepond--drop-label {
+  @apply !text-xs bg-white border border-gray-200 rounded;
+}
+
+/* React Select */
+.react-select div {
+  @apply !border-none !shadow-none !border !border-bermuda-200 !shadow-bermuda-200;
+}
+
+.slick-slide:focus,
+.slick-slide *:focus {
+  outline: none;
+}
+
+/* components */
+/* .responseSelect {
+  position: relative;
+}
+
+.responseSelect::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #000;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -3.5px;
+  pointer-events: none;
+}
+
+.responseSelect option {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .responseSelect {
+    width: 100%;
+  }
+
+  .responseSelect option {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+  }
+} */
+
+/* React PDF */
+.react-pdf__Page__annotations {
+  @apply !h-0;
+}
+
+.company-profile-doc {
+  @apply border border-gray-200 rounded;
+}
+
+.react-pdf__Page {
+  @apply !min-h-fit !min-w-full;
+}
+
+.react-pdf__Page__canvas {
+  @apply !h-auto !w-full rounded;
+}
+
+/* Calendar */
+.react-datepicker__header {
+  @apply !bg-white !border-b-2 !border-gray-200 !border-opacity-50;
+}
+
+/* Total Processing */
+.gpay-button.black.pay.en {
+  @apply w-full p-1.5 h-[50px] bg-half;
+}
+
+.react-datepicker-wrapper {
+  @apply w-full;
+}
+
+apple-pay-button {
+  --apple-pay-button-width: 300px;
+  --apple-pay-button-height: 64px;
+  --apple-pay-button-border-radius: 10px;
+  --apple-pay-button-padding: 0px 0px;
+  --apple-pay-button-box-sizing: border-box;
+}
+
+/* buttons */
+.primary-btn {
+  @apply px-5 py-2 text-white duration-300 border border-transparent rounded-full md:hover:border-white bg-bermuda-200 md:hover:bg-transparent hover:text-white;
+}
+
+.primary-outline-btn {
+  @apply px-5 py-2 border rounded-full text-bermuda-200 border-bermuda-200 hover:bg-bermuda-200 hover:text-white;
+}
+
+.secondary-outline-btn {
+  @apply px-5 py-2 text-gray-200 border border-gray-200 rounded-full hover:bg-gray-200 hover:text-black;
+}
+
+/*  */
+.affiliate-swiper .swiper-button-prev::after,
+.affiliate-swiper .swiper-button-next::after {
+  @apply text-white;
+}
+
+.video-container {
+  width: 100vw;
+  height: 1000px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 1000px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Phone number Input */
+.selected-flag {
+  @apply !pr-2.5;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    height: 56.25vw;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    width: 177.78vh;
+  }
+}
+
+/* Tabby */
+.styles__tabby-card--de772 {
+  min-width: 240px !important;
+  padding-bottom: 0 !important;
+}
