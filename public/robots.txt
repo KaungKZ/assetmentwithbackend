@@ -1,0 +1,21 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /profile
+Disallow: /booking/registration
+Disallow: /payment
+Disallow: /password
+Disallow: /member
+Disallow: /booking
+Disallow: /congratulations
+Disallow: /enrol
+
+
+# Host
+Host: http://localhost:3001
+
+# Sitemaps
+Sitemap: http://localhost:3001/sitemap.xml
